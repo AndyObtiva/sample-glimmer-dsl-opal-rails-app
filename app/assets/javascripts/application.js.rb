@@ -14,14 +14,15 @@
 #// require activestorage
 #// require turbolinks
 #// require_tree .
-puts 'before opal'
 require 'opal'
 puts 'after opal'
 
 # require 'opal_ujs'
+
 puts 'before glimmer'
 require 'glimmer'
 puts 'after glimmer'
+
 # require 'turbolinks'
 # require_tree '.' # a Ruby equivalent of the require_tree Sprockets directive is available
 
@@ -80,6 +81,7 @@ puts 'after glimmer'
 # 
 # $document.title = 'Hello My Friend'
 # 
+
 include Glimmer
   
 shell {
