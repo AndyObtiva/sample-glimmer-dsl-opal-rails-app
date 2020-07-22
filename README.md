@@ -5,14 +5,17 @@ This is a sample app built with [Glimmer DSL for Opal](https://github.com/AndyOb
 
 ## Setup Instructions
 
-This is a standard Rails 5 app. 
-
+This is a standard Rails 5 app. As such, you may setup locally by cloning the repository and running the following commands from inside the app directory:
 - `bundle`
 - `rails s`
 
+You should see the Contact Manager sample app by default.
+
+![Contact Manager Sample Screenshot](https://github.com/AndyObtiva/glimmer-dsl-opal/raw/master/images/glimmer-dsl-opal-contact-manager.png)
+
 You may then change which [Glimmer](https://github.com/AndyObtiva/glimmer) sample is active by editing `app/assets/javascripts/application.rb` and uncommenting the sample you want to see. 
 
-In the version below, the `samples/elaborate/contact_manager` is the one that is active.
+In the version below, you can see that `samples/elaborate/contact_manager` is the sample that is active.
 
 ```ruby
 require 'glimmer-dsl-opal'
