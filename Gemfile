@@ -5,10 +5,14 @@ ruby '2.5.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
+#gem 'puts_debuggerer'
 gem 'opal-rails'
-gem 'opal-browser'
-#gem 'browser'
-gem 'glimmer', '0.8.0', require: false
+gem 'opal-async'
+gem 'opal-jquery'
+#gem 'opal-browser'
+#gem 'glimmer', path: '../../../glimmer'
+gem 'glimmer-dsl-opal', '~> 0.0.9', require: false #, path: '../../../glimmer-dsl-opal'
+gem 'glimmer-dsl-xml', '~> 0.1.0', require: false #, path: '../../../glimmer-dsl-xml'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server

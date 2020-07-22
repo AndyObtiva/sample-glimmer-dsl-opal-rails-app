@@ -28,5 +28,7 @@ Rails.application.config.opal.assigns_in_templates = :locals # only locals
 Rails.application.config.opal.assigns_in_templates = :ivars # only instance variables
 
 Opal::Config.source_map_enabled = true
+#Opal::Processor.source_map_enabled = true #unlike online docs, it fails, not true
 
-Opal.use_gem 'glimmer'
+Opal.use_gem 'glimmer-dsl-opal'
+Opal.use_gem 'glimmer-dsl-xml'
