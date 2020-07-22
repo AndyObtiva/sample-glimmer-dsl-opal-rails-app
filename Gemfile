@@ -11,7 +11,7 @@ gem 'opal-async'
 gem 'opal-jquery'
 #gem 'opal-browser'
 #gem 'glimmer', path: '../../../glimmer'
-gem 'glimmer-dsl-opal', '~> 0.0.9', require: false #, path: '../../../glimmer-dsl-opal'
+gem 'glimmer-dsl-opal', '~> 0.1.0', require: false, git: 'https://github.com/AndyObtiva/glimmer-dsl-opal', ref: 'opal-rspec-jquery' #, path: '../../../glimmer-dsl-opal'
 gem 'glimmer-dsl-xml', '~> 0.1.0', require: false #, path: '../../../glimmer-dsl-xml'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
