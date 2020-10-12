@@ -15,22 +15,23 @@ You should see the Contact Manager sample app by default.
 
 You may then change which [Glimmer](https://github.com/AndyObtiva/glimmer) sample is active by editing `app/assets/javascripts/application.rb` and uncommenting the sample you want to see. 
 
-In the version below, you can see that `samples/elaborate/contact_manager` is the sample that is active.
+In the version below, you can see that `glimmer-dsl-opal/samples/elaborate/contact_manager` is the sample that is active.
 
 ```ruby
 require 'glimmer-dsl-opal'
 
 Document.ready? do
-#   require 'samples/hello/hello_world'
-#   require 'samples/hello/hello_combo'
-#   require 'samples/hello/hello_computed'
-#   require 'samples/hello/hello_list_single_selection'
-#   require 'samples/hello/hello_list_multi_selection'
-#   require 'samples/hello/hello_browser'
-#   require 'samples/hello/hello_tab'
-#   require 'samples/elaborate/login'
-#   require 'samples/elaborate/tic_tac_toe'
-  require 'samples/elaborate/contact_manager'
+  require 'glimmer-dsl-opal/samples/hello/hello_world'
+#   require 'glimmer-dsl-opal/samples/hello/hello_combo'
+#   require 'glimmer-dsl-opal/samples/hello/hello_computed'
+#   require 'glimmer-dsl-opal/samples/hello/hello_list_single_selection'
+#   require 'glimmer-dsl-opal/samples/hello/hello_list_multi_selection'
+#   require 'glimmer-dsl-opal/samples/hello/hello_browser'
+#   require 'glimmer-dsl-opal/samples/hello/hello_tab'
+#   require 'glimmer-dsl-opal/samples/hello/hello_custom_widget'
+#   require 'glimmer-dsl-opal/samples/elaborate/login'
+#   require 'glimmer-dsl-opal/samples/elaborate/tic_tac_toe'
+#   require 'glimmer-dsl-opal/samples/elaborate/contact_manager'
 end
 ```
 

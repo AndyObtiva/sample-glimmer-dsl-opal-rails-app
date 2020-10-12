@@ -1,18 +1,17 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.7'
+# ruby '2.5.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
-#gem 'puts_debuggerer'
+gem 'puts_debuggerer' #, path: '../puts_debuggerer'
 gem 'opal-rails'
-gem 'opal-async' #, path: '../opal-async'
+gem 'opal-async', '~> 1.2.0' #, path: '../opal-async'
 gem 'opal-jquery'
-#gem 'opal-browser'
-#gem 'glimmer', path: '../glimmer'
-gem 'glimmer-dsl-opal', '~> 0.1.0', require: false #, path: '../glimmer-dsl-opal'
-gem 'glimmer-dsl-xml', '~> 0.1.0', require: false #, path: '../glimmer-dsl-xml'
+gem 'glimmer-dsl-opal', '~> 0.2.0', require: false #, path: '../glimmer-dsl-opal'
+gem 'glimmer-dsl-xml', '~> 1.1.0', require: false #, path: '../glimmer-dsl-xml'
+gem 'glimmer-dsl-css', '~> 1.1.0', require: false #, path: '../glimmer-dsl-xml'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
