@@ -1,4 +1,5 @@
 require 'glimmer-dsl-opal'
+require 'puts_debuggerer'
 
 Document.ready? do
   require 'glimmer-dsl-opal/samples/hello/hello_world'
@@ -9,6 +10,7 @@ Document.ready? do
 #   require 'glimmer-dsl-opal/samples/hello/hello_browser'
 #   require 'glimmer-dsl-opal/samples/hello/hello_tab'
 #   require 'glimmer-dsl-opal/samples/hello/hello_custom_widget'
+#   require 'glimmer-dsl-opal/samples/hello/hello_custom_shell'
 #   require 'glimmer-dsl-opal/samples/elaborate/login'
 #   require 'glimmer-dsl-opal/samples/elaborate/tic_tac_toe'
 #   require 'glimmer-dsl-opal/samples/elaborate/contact_manager'
