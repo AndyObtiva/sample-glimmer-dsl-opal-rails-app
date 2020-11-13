@@ -34,3 +34,4 @@
 .gladiator
 
 yarn.lock
+.DS_Store
