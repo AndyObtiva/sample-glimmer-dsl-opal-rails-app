@@ -13,12 +13,13 @@ You should see the Contact Manager sample app by default.
 
 ![Contact Manager Sample Screenshot](https://github.com/AndyObtiva/glimmer-dsl-opal/raw/master/images/glimmer-dsl-opal-contact-manager.png)
 
-You may then change which [Glimmer](https://github.com/AndyObtiva/glimmer) sample is active by editing `app/assets/javascripts/application.rb` and uncommenting the sample you want to see. 
+You may then change which [Glimmer](https://github.com/AndyObtiva/glimmer) sample is active by editing `app/assets/javascripts/application.rb` and uncommenting the sample you want to see.
 
 In the version below, you can see that `glimmer-dsl-opal/samples/elaborate/contact_manager` is the sample that is active.
 
 ```ruby
 require 'glimmer-dsl-opal'
+require 'puts_debuggerer'
 
 Document.ready? do
   require 'glimmer-dsl-opal/samples/hello/hello_world'
@@ -30,9 +31,16 @@ Document.ready? do
 #   require 'glimmer-dsl-opal/samples/hello/hello_tab'
 #   require 'glimmer-dsl-opal/samples/hello/hello_custom_widget'
 #   require 'glimmer-dsl-opal/samples/hello/hello_custom_shell'
+#   require 'glimmer-dsl-opal/samples/hello/hello_radio'
+#   require 'glimmer-dsl-opal/samples/hello/hello_radio_group'
+#   require 'glimmer-dsl-opal/samples/hello/hello_group'
+#   require 'glimmer-dsl-opal/samples/hello/hello_checkbox'
+#   require 'glimmer-dsl-opal/samples/hello/hello_checkbox_group'
+#   require 'glimmer-dsl-opal/samples/hello/hello_date_time'
 #   require 'glimmer-dsl-opal/samples/elaborate/login'
 #   require 'glimmer-dsl-opal/samples/elaborate/tic_tac_toe'
 #   require 'glimmer-dsl-opal/samples/elaborate/contact_manager'
+#   require 'samples/nebula/c_date_time_gallery.rb'
 end
 ```
 

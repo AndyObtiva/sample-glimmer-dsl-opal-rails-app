@@ -20,4 +20,5 @@ Document.ready? do
 #   require 'glimmer-dsl-opal/samples/elaborate/login'
 #   require 'glimmer-dsl-opal/samples/elaborate/tic_tac_toe'
 #   require 'glimmer-dsl-opal/samples/elaborate/contact_manager'
+#   require 'samples/nebula/c_date_time_gallery.rb'
 end
