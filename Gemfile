@@ -12,7 +12,7 @@ gem 'opal-jquery'
 gem 'glimmer-dsl-opal', '~> 0.6.1' #, path: '../glimmer-dsl-opal'
 gem 'glimmer-dsl-xml', '~> 1.1.0', require: false #, path: '../glimmer-dsl-xml'
 gem 'glimmer-dsl-css', '~> 1.1.0', require: false #, path: '../glimmer-dsl-xml'
-gem 'glimmer-cw-cdatetime-nebula', '~> 1.5.0.2.0' #, path: '../glimmer-cw-cdatetime-nebula'
+gem 'glimmer-cw-cdatetime-nebula', '~> 1.5.0.3.0' #, path: '../glimmer-cw-cdatetime-nebula'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
