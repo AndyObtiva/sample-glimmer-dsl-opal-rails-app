@@ -45,6 +45,11 @@ Document.ready? do
 end
 ```
 
+## Hosted Website
+
+You may check out a hosted website on Heroku at:
+https://sample-glimmer-dsl-opal-app.herokuapp.com/
+
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
