@@ -2,7 +2,7 @@ require 'glimmer-dsl-opal'
 require 'puts_debuggerer'
 
 Document.ready? do
-  require 'glimmer-dsl-opal/samples/hello/hello_world'
+#   require 'glimmer-dsl-opal/samples/hello/hello_world'
 #   require 'glimmer-dsl-opal/samples/hello/hello_combo'
 #   require 'glimmer-dsl-opal/samples/hello/hello_computed'
 #   require 'glimmer-dsl-opal/samples/hello/hello_list_single_selection'
@@ -17,6 +17,7 @@ Document.ready? do
 #   require 'glimmer-dsl-opal/samples/hello/hello_checkbox'
 #   require 'glimmer-dsl-opal/samples/hello/hello_checkbox_group'
 #   require 'glimmer-dsl-opal/samples/hello/hello_date_time'
+  require 'glimmer-dsl-opal/samples/hello/hello_table'
 #   require 'glimmer-dsl-opal/samples/elaborate/login'
 #   require 'glimmer-dsl-opal/samples/elaborate/tic_tac_toe'
 #   require 'glimmer-dsl-opal/samples/elaborate/contact_manager'
