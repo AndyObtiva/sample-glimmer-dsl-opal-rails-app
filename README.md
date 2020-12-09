@@ -9,13 +9,23 @@ This is a standard Rails app. As such, you may setup locally by cloning the repo
 - `bundle`
 - `rails s`
 
-You should see the Contact Manager sample app by default.
+You should see all samples listed by default.
 
-![Contact Manager Sample Screenshot](https://github.com/AndyObtiva/glimmer-dsl-opal/raw/master/images/glimmer-dsl-opal-contact-manager.png)
+[![Sample Screenshot](sample-glimmer-dsl-opal-rails-app.png)](https://sample-glimmer-dsl-opal-app.herokuapp.com/)
 
-You may then change which [Glimmer](https://github.com/AndyObtiva/glimmer) sample is active by editing `app/assets/javascripts/application.rb` and uncommenting the sample you want to see.
+## Hosted Website
 
-In the version below, you can see that `glimmer-dsl-opal/samples/elaborate/contact_manager` is the sample that is active.
+You may check out a hosted website on Heroku at:
+
+https://sample-glimmer-dsl-opal-app.herokuapp.com/
+
+## Manual Sample Loading
+
+Alternatively, you may load samples manually by editing `app/assets/javascripts/application.rb` and adding the code below to manually enable the sample you would like to see.
+
+This is useful if you would like to experiment by adding your own samples or adding your Glimmer code directly inside the `Document.ready?` block.
+
+In the version below, you can see that `glimmer-dsl-opal/samples/hello/hello_world` is the sample that is active.
 
 ```ruby
 require 'glimmer-dsl-opal'
@@ -45,10 +55,23 @@ Document.ready? do
 end
 ```
 
-## Hosted Website
+Here is a version of `app/assets/javascripts/application.rb` where Glimmer GUI code is added directly.
 
-You may check out a hosted website on Heroku at:
-https://sample-glimmer-dsl-opal-app.herokuapp.com/
+```ruby
+require 'glimmer-dsl-opal'
+require 'puts_debuggerer'
+
+Document.ready? do
+  include Glimmer
+  
+  shell {
+    text 'Glimmer'
+    label {
+      text 'Hello, World!'
+    }
+  }.open
+end
+```
 
 ## License
 

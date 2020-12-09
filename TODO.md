@@ -1,4 +1,4 @@
 # TODO
 
-- Host online on Heroku
-- Provide a sample of samples app to allow easy browsing/launching of samples
+- Center labels in sample of samples under application.rb
+- Have samples spawn new tabs/windows when loaded
