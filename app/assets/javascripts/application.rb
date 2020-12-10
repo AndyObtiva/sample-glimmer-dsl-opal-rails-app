@@ -7,56 +7,16 @@ Document.ready? do
   shell {
     fill_layout :vertical
     
-    label {
+    label(:center) {
       text 'Sample Glimmer DSL for Opal Rails App'
       font height: 30
     }
   
-    label {
+    label(:center) {
       text 'Click on a sample to load. Refresh page to load another sample.'
       font height: 20
     }
   
-    button {
-      text 'Hello, World!'
-      font height: 20
-      
-      on_widget_selected {
-        require 'glimmer-dsl-opal/samples/hello/hello_world'
-      }
-    }
-    button {
-      text 'Hello, Combo!'
-      font height: 20
-      
-      on_widget_selected {
-        require 'glimmer-dsl-opal/samples/hello/hello_combo'
-      }
-    }
-    button {
-      text 'Hello, Computed!'
-      font height: 20
-      
-      on_widget_selected {
-        require 'glimmer-dsl-opal/samples/hello/hello_computed'
-      }
-    }
-    button {
-      text 'Hello, List Single Selection!'
-      font height: 20
-      
-      on_widget_selected {
-        require 'glimmer-dsl-opal/samples/hello/hello_list_single_selection'
-      }
-    }
-    button {
-      text 'Hello, List Multi Selection!'
-      font height: 20
-      
-      on_widget_selected {
-        require 'glimmer-dsl-opal/samples/hello/hello_list_multi_selection'
-      }
-    }
     button {
       text 'Hello, Browser!'
       font height: 20
@@ -66,51 +26,11 @@ Document.ready? do
       }
     }
     button {
-      text 'Hello, Tab!'
+      text 'Hello, Button!'
       font height: 20
       
       on_widget_selected {
-        require 'glimmer-dsl-opal/samples/hello/hello_tab'
-      }
-    }
-    button {
-      text 'Hello, Custom Widget!'
-      font height: 20
-      
-      on_widget_selected {
-        require 'glimmer-dsl-opal/samples/hello/hello_custom_widget'
-      }
-    }
-    button {
-      text 'Hello, Custom Shell!'
-      font height: 20
-      
-      on_widget_selected {
-        require 'glimmer-dsl-opal/samples/hello/hello_custom_shell'
-      }
-    }
-    button {
-      text 'Hello, Radio!'
-      font height: 20
-      
-      on_widget_selected {
-        require 'glimmer-dsl-opal/samples/hello/hello_radio'
-      }
-    }
-    button {
-      text 'Hello, Radio Group!'
-      font height: 20
-      
-      on_widget_selected {
-        require 'glimmer-dsl-opal/samples/hello/hello_radio_group'
-      }
-    }
-    button {
-      text 'Hello, Group!'
-      font height: 20
-      
-      on_widget_selected {
-        require 'glimmer-dsl-opal/samples/hello/hello_group'
+        require 'glimmer-dsl-opal/samples/hello/hello_button'
       }
     }
     button {
@@ -130,6 +50,38 @@ Document.ready? do
       }
     }
     button {
+      text 'Hello, Combo!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_combo'
+      }
+    }
+    button {
+      text 'Hello, Computed!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_computed'
+      }
+    }
+    button {
+      text 'Hello, Custom Widget!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_custom_widget'
+      }
+    }
+    button {
+      text 'Hello, Custom Shell!'
+      font height: 20
+
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_custom_shell'
+      }
+    }
+    button {
       text 'Hello, Date Time!'
       font height: 20
       
@@ -138,11 +90,67 @@ Document.ready? do
       }
     }
     button {
+      text 'Hello, Group!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_group'
+      }
+    }
+    button {
+      text 'Hello, List Single Selection!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_list_single_selection'
+      }
+    }
+    button {
+      text 'Hello, List Multi Selection!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_list_multi_selection'
+      }
+    }
+    button {
+      text 'Hello, Radio!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_radio'
+      }
+    }
+    button {
+      text 'Hello, Radio Group!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_radio_group'
+      }
+    }
+    button {
+      text 'Hello, Tab!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_tab'
+      }
+    }
+    button {
       text 'Hello, Table!'
       font height: 20
       
       on_widget_selected {
         require 'glimmer-dsl-opal/samples/hello/hello_table'
+      }
+    }
+    button {
+      text 'Hello, World!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_world'
       }
     }
     button {
