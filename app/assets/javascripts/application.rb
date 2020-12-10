@@ -167,6 +167,10 @@ Document.ready? do
       
       on_widget_selected {
         require 'glimmer-dsl-opal/samples/elaborate/tic_tac_toe'
+        
+        # The following is demonstrating styling typically done by web designers in a stylesheet
+        Element['.shell'].css('width', 150)
+        Element['.shell'].css('height', 178)
       }
     }
     button {
