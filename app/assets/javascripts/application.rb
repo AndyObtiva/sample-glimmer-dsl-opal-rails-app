@@ -114,6 +114,22 @@ Document.ready? do
       }
     }
     button {
+      text 'Hello, Message Box!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_message_box'
+      }
+    }
+    button {
+      text 'Hello, Pop Up Context Menu!'
+      font height: 20
+      
+      on_widget_selected {
+        require 'glimmer-dsl-opal/samples/hello/hello_pop_up_context_menu'
+      }
+    }
+    button {
       text 'Hello, Radio!'
       font height: 20
       
