@@ -31,28 +31,28 @@ In the version below, you can see that `glimmer-dsl-opal/samples/hello/hello_wor
 require 'glimmer-dsl-opal'
 require 'puts_debuggerer'
 
-Document.ready? do
-  require 'glimmer-dsl-opal/samples/hello/hello_world'
-#   require 'glimmer-dsl-opal/samples/hello/hello_combo'
-#   require 'glimmer-dsl-opal/samples/hello/hello_computed'
-#   require 'glimmer-dsl-opal/samples/hello/hello_list_single_selection'
-#   require 'glimmer-dsl-opal/samples/hello/hello_list_multi_selection'
-#   require 'glimmer-dsl-opal/samples/hello/hello_browser'
-#   require 'glimmer-dsl-opal/samples/hello/hello_tab'
-#   require 'glimmer-dsl-opal/samples/hello/hello_custom_widget'
-#   require 'glimmer-dsl-opal/samples/hello/hello_custom_shell'
-#   require 'glimmer-dsl-opal/samples/hello/hello_radio'
-#   require 'glimmer-dsl-opal/samples/hello/hello_radio_group'
-#   require 'glimmer-dsl-opal/samples/hello/hello_group'
-#   require 'glimmer-dsl-opal/samples/hello/hello_checkbox'
-#   require 'glimmer-dsl-opal/samples/hello/hello_checkbox_group'
-#   require 'glimmer-dsl-opal/samples/hello/hello_date_time'
-#   require 'glimmer-dsl-opal/samples/hello/hello_table'
-#   require 'glimmer-dsl-opal/samples/elaborate/login'
-#   require 'glimmer-dsl-opal/samples/elaborate/tic_tac_toe'
-#   require 'glimmer-dsl-opal/samples/elaborate/contact_manager'
-#   require 'samples/nebula/c_date_time_gallery.rb'
-end
+require 'glimmer-dsl-opal/samples/hello/hello_world'
+# require 'glimmer-dsl-opal/samples/hello/hello_combo'
+# require 'glimmer-dsl-opal/samples/hello/hello_computed'
+# require 'glimmer-dsl-opal/samples/hello/hello_list_single_selection'
+# require 'glimmer-dsl-opal/samples/hello/hello_list_multi_selection'
+# require 'glimmer-dsl-opal/samples/hello/hello_browser'
+# require 'glimmer-dsl-opal/samples/hello/hello_tab'
+# require 'glimmer-dsl-opal/samples/hello/hello_custom_widget'
+# require 'glimmer-dsl-opal/samples/hello/hello_custom_shell'
+# require 'glimmer-dsl-opal/samples/hello/hello_radio'
+# require 'glimmer-dsl-opal/samples/hello/hello_radio_group'
+# require 'glimmer-dsl-opal/samples/hello/hello_group'
+# require 'glimmer-dsl-opal/samples/hello/hello_checkbox'
+# require 'glimmer-dsl-opal/samples/hello/hello_checkbox_group'
+# require 'glimmer-dsl-opal/samples/hello/hello_date_time'
+# require 'glimmer-dsl-opal/samples/hello/hello_table'
+# require 'glimmer-dsl-opal/samples/hello/hello_pop_up_context_menu'
+# require 'glimmer-dsl-opal/samples/hello/hello_menu_bar'
+# require 'glimmer-dsl-opal/samples/elaborate/login'
+# require 'glimmer-dsl-opal/samples/elaborate/tic_tac_toe'
+# require 'glimmer-dsl-opal/samples/elaborate/contact_manager'
+# require 'samples/nebula/c_date_time_gallery.rb'
 ```
 
 Here is a version of `app/assets/javascripts/application.rb` where Glimmer GUI code is added directly.
@@ -61,16 +61,14 @@ Here is a version of `app/assets/javascripts/application.rb` where Glimmer GUI c
 require 'glimmer-dsl-opal'
 require 'puts_debuggerer'
 
-Document.ready? do
-  include Glimmer
-  
-  shell {
-    text 'Glimmer'
-    label {
-      text 'Hello, World!'
-    }
-  }.open
-end
+include Glimmer
+
+shell {
+  text 'Glimmer'
+  label {
+    text 'Hello, World!'
+  }
+}.open
 ```
 
 ## License
