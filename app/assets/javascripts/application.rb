@@ -113,19 +113,19 @@ shell {
     }
   }
   button {
-    text 'Hello, Message Box!'
-    font height: 20
-    
-    on_widget_selected {
-      require 'glimmer-dsl-opal/samples/hello/hello_message_box'
-    }
-  }
-  button {
     text 'Hello, Menu Bar!'
     font height: 20
     
     on_widget_selected {
       require 'glimmer-dsl-opal/samples/hello/hello_menu_bar'
+    }
+  }
+  button {
+    text 'Hello, Message Box!'
+    font height: 20
+    
+    on_widget_selected {
+      require 'glimmer-dsl-opal/samples/hello/hello_message_box'
     }
   }
   button {
