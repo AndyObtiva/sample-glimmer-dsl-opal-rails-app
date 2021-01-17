@@ -89,6 +89,14 @@ shell {
     }
   }
   button {
+    text 'Hello, Dialog!'
+    font height: 20
+    
+    on_widget_selected {
+      require 'glimmer-dsl-opal/samples/hello/hello_dialog'
+    }
+  }
+  button {
     text 'Hello, Group!'
     font height: 20
     
@@ -212,4 +220,4 @@ shell {
       require 'samples/nebula/c_date_time_gallery.rb'
     }
   }
-}
+}.open
