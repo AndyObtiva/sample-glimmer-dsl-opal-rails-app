@@ -173,6 +173,7 @@ shell {
     font height: 20
     
     on_widget_selected {
+      Glimmer::SWT::DisplayProxy.open_custom_shells_in_current_window = true
       require 'glimmer-dsl-opal/samples/hello/hello_table'
     }
   }
@@ -209,6 +210,7 @@ shell {
     font height: 20
     
     on_widget_selected {
+      Glimmer::SWT::DisplayProxy.open_custom_shells_in_current_window = true
       require 'glimmer-dsl-opal/samples/elaborate/contact_manager'
     }
   }
