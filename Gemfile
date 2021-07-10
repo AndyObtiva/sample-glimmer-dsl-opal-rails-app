@@ -9,7 +9,7 @@ gem 'puts_debuggerer' #, path: '../puts_debuggerer'
 gem 'opal-rails'
 gem 'opal-async', '~> 1.2.0' #, path: '../opal-async'
 gem 'opal-jquery'
-gem 'glimmer-dsl-opal', '~> 0.11.0' # , path: '../glimmer-dsl-opal' # TODO disable path before pushing
+gem 'glimmer-dsl-opal', '~> 0.13.0' #, path: '../glimmer-dsl-opal'
 gem 'glimmer-dsl-xml', '~> 1.2.0', require: false #, path: '../glimmer-dsl-xml'
 gem 'glimmer-dsl-css', '~> 1.2.0', require: false #, path: '../glimmer-dsl-xml'
 gem 'glimmer-cw-cdatetime-nebula', '~> 1.5.0.3.0' #, path: '../glimmer-cw-cdatetime-nebula'
