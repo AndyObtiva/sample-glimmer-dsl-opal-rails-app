@@ -198,6 +198,7 @@ shell {
     font height: 20
     
     on_widget_selected {
+      Glimmer::SWT::DisplayProxy.open_custom_shells_in_current_window = true
       require 'glimmer-dsl-opal/samples/elaborate/tic_tac_toe'
       
       # The following is demonstrating styling typically done by web designers in a stylesheet
@@ -212,6 +213,15 @@ shell {
     on_widget_selected {
       Glimmer::SWT::DisplayProxy.open_custom_shells_in_current_window = true
       require 'glimmer-dsl-opal/samples/elaborate/contact_manager'
+    }
+  }
+  button {
+    text 'Weather'
+    font height: 20
+    
+    on_widget_selected {
+      Glimmer::SWT::DisplayProxy.open_custom_shells_in_current_window = true
+      require 'glimmer-dsl-opal/samples/elaborate/weather'
     }
   }
   button {
