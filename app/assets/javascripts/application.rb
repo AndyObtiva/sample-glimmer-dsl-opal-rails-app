@@ -57,6 +57,14 @@ shell {
     }
   }
   button {
+    text 'Hello, Composite!'
+    font height: 20
+    
+    on_widget_selected {
+      require 'glimmer-dsl-opal/samples/hello/hello_composite'
+    }
+  }
+  button {
     text 'Hello, Computed!'
     font height: 20
     
