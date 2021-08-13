@@ -113,6 +113,14 @@ shell {
     }
   }
   button {
+    text 'Hello, Layout!'
+    font height: 20
+    
+    on_widget_selected {
+      require 'glimmer-dsl-opal/samples/hello/hello_layout'
+    }
+  }
+  button {
     text 'Hello, List Single Selection!'
     font height: 20
     
