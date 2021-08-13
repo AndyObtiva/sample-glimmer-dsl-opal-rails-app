@@ -17,6 +17,14 @@ shell {
   }
 
   button {
+    text 'Hello, Arrow!'
+    font height: 20
+    
+    on_widget_selected {
+      require 'glimmer-dsl-opal/samples/hello/hello_arrow'
+    }
+  }
+  button {
     text 'Hello, Browser!'
     font height: 20
     
