@@ -49,6 +49,14 @@ shell {
     }
   }
   button {
+    text 'Hello, C Tab!'
+    font height: 20
+
+    on_widget_selected {
+      require 'glimmer-dsl-opal/samples/hello/hello_c_tab'
+    }
+  }
+  button {
     text 'Hello, Checkbox!'
     font height: 20
     
