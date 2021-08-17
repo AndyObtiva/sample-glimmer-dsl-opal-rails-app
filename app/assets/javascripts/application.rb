@@ -4,14 +4,20 @@ require 'puts_debuggerer'
 include Glimmer
 
 shell {
-  fill_layout :vertical
+  grid_layout 2, true
   
   label(:center) {
+    layout_data(:fill, :center, true, false) {
+      horizontal_span 2
+    }
     text 'Sample Glimmer DSL for Opal Rails App'
     font height: 30
   }
 
   label(:center) {
+    layout_data(:fill, :center, true, false) {
+      horizontal_span 2
+    }
     text 'Click on a sample to load. Refresh page to load another sample.'
     font height: 20
   }
@@ -258,6 +264,15 @@ shell {
     }
   }
   button {
+    text 'Contact Manager'
+    font height: 20
+    
+    on_widget_selected {
+      Glimmer::SWT::DisplayProxy.open_custom_shells_in_current_window = true
+      require 'glimmer-dsl-opal/samples/elaborate/contact_manager'
+    }
+  }
+  button {
     text 'Login'
     font height: 20
     
@@ -279,12 +294,14 @@ shell {
     }
   }
   button {
-    text 'Contact Manager'
+    text 'User Profile'
     font height: 20
     
     on_widget_selected {
-      Glimmer::SWT::DisplayProxy.open_custom_shells_in_current_window = true
-      require 'glimmer-dsl-opal/samples/elaborate/contact_manager'
+      require 'glimmer-dsl-opal/samples/elaborate/user_profile'
+  
+      # The following is demonstrating styling typically done by web designers in a stylesheet
+      Element['.group'].css('height', 'auto')
     }
   }
   button {
