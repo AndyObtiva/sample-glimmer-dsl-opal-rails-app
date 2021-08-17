@@ -97,6 +97,14 @@ shell {
     }
   }
   button {
+    text 'Hello, Cursor!'
+    font height: 20
+    
+    on_widget_selected {
+      require 'glimmer-dsl-opal/samples/hello/hello_cursor'
+    }
+  }
+  button {
     text 'Hello, Custom Widget!'
     font height: 20
     
