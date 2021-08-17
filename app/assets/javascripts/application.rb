@@ -201,6 +201,22 @@ shell {
     }
   }
   button {
+    text 'Hello, Scale!'
+    font height: 20
+    
+    on_widget_selected {
+      require 'glimmer-dsl-opal/samples/hello/hello_scale'
+    }
+  }
+  button {
+    text 'Hello, Slider!'
+    font height: 20
+    
+    on_widget_selected {
+      require 'glimmer-dsl-opal/samples/hello/hello_slider'
+    }
+  }
+  button {
     text 'Hello, Spinner!'
     font height: 20
     
