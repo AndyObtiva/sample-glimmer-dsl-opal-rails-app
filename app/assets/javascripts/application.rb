@@ -207,6 +207,22 @@ shell {
     }
   }
   button {
+    text 'Hello, Print!'
+    font height: 20
+    
+    on_widget_selected {
+      require 'glimmer-dsl-opal/samples/hello/hello_print'
+    }
+  }
+  button {
+    text 'Hello, Progress Bar!'
+    font height: 20
+    
+    on_widget_selected {
+      require 'glimmer-dsl-opal/samples/hello/hello_progress_bar'
+    }
+  }
+  button {
     text 'Hello, Radio!'
     font height: 20
     
