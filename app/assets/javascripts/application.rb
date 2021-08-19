@@ -2,7 +2,7 @@ require 'glimmer-dsl-opal'
 require 'puts_debuggerer'
 
 include Glimmer
-
+      
 shell {
   grid_layout 2, true
   
@@ -277,6 +277,9 @@ shell {
     on_widget_selected do
       Glimmer::SWT::DisplayProxy.open_custom_shells_in_current_window = true
       require 'glimmer-dsl-opal/samples/hello/hello_table'
+      
+      # The following is demonstrating styling typically done by web designers in a stylesheet
+      Element['.shell'].css('justify-content', 'center')
     end
   }
   button {
