@@ -332,6 +332,15 @@ shell {
     end
   }
   button {
+    text 'Tetris'
+    font height: 20
+    
+    on_widget_selected do
+      Glimmer::SWT::DisplayProxy.open_custom_shells_in_current_window = true
+      require 'glimmer-dsl-opal/samples/elaborate/tetris'
+    end
+  }
+  button {
     text 'Weather'
     font height: 20
     
