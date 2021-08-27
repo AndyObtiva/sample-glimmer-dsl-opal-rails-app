@@ -283,6 +283,14 @@ shell {
     end
   }
   button {
+    text 'Hello, Text!'
+    font height: 20
+    
+    on_widget_selected do
+      require 'glimmer-dsl-opal/samples/hello/hello_text'
+    end
+  }
+  button {
     text 'Hello, World!'
     font height: 20
     
