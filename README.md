@@ -7,6 +7,7 @@ This is a sample app built with [Glimmer DSL for Opal](https://github.com/AndyOb
 
 This is a standard Rails app. As such, you may setup locally by cloning the repository and running the following commands from inside the app directory:
 - `bundle`
+- `rails db:migrate`
 - `rails s`
 
 You should see all samples listed by default.
